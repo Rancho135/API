@@ -33,7 +33,7 @@ def StudentInfo_all(request):
 
         if serializer.is_valid():#checking to know if the entries in the serializer .is_valid()
 
-            object = StudentInfo.objects.create(**serializer.validated_data, StudentId=request.user)#here we are using unpaking to create data. using key word arguments
+            object = StudentInfo.objects.create(**serializer.validated_data, studentId=request.user)#here we are using unpaking to create data. using key word arguments
             #in creating a new todo, its supposed to be user=request.user, activity= cooking. using **serializer.validorated_data would create a bunch of key -word
 
             serializer = StudentInfoSerializers(object)
