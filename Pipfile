@@ -8,6 +8,7 @@ django-cors-headers = "*"
 python-dotenv = "*"
 gunicorn = "*"
 whitenoise = "*"
+drf-yasg = "*"
 
 [dev-packages]
 
